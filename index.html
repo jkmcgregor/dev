@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaina McGregor | Software, Sysadmin & Automation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'Fira Code', monospace; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Header / Hero Section -->
+    <header class="border-b border-slate-700 bg-slate-800">
+        <div class="max-w-5xl mx-auto px-6 py-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Jaina McGregor</h1>
+            <h2 class="text-xl md:text-2xl text-blue-400 font-mono mb-6">> Software Engineer | Automation Specialist | Sysadmin</h2>
+            <p class="text-lg leading-relaxed max-w-3xl">
+                Specializing in building resilient serverless architectures, developing custom API integrations, and automating complex workflows. Experienced in managing technical projects from concept to deployment, optimizing databases, and maintaining secure self-hosted infrastructure.
+            </p>
+            <div class="mt-8 flex gap-4">
+                <a href="mailto:your-email@example.com" class="px-6 py-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded transition-colors duration-200">
+                    <i class="fas fa-envelope mr-2"></i> Contact Me
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" class="px-6 py-2 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded transition-colors duration-200">
+                    <i class="fab fa-github mr-2"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Core Competencies & Tech Stack -->
+        <section>
+            <h3 class="text-2xl font-bold text-white mb-6 border-b border-slate-700 pb-2">Technical Arsenal</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 shadow-sm">
+                    <h4 class="text-blue-400 font-bold mb-3"><i class="fas fa-code mr-2"></i>Languages & Scripts</h4>
+                    <ul class="space-y-2 font-mono text-sm">
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Google Apps Script / JS</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 shadow-sm">
+                    <h4 class="text-blue-400 font-bold mb-3"><i class="fas fa-server mr-2"></i>Infrastructure & Cloud</h4>
+                    <ul class="space-y-2 font-mono text-sm">
+                        <li>Docker & Containerization</li>
+                        <li>Cloudflare & Modal</li>
+                        <li>Tailscale / WireGuard (VPN)</li>
+                        <li>Pi-hole DNS & Self-Hosting</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 shadow-sm">
+                    <h4 class="text-blue-400 font-bold mb-3"><i class="fas fa-tools mr-2"></i>Tools & Platforms</h4>
+                    <ul class="space-y-2 font-mono text-sm">
+                        <li>REST APIs & Webhooks</li>
+                        <li>Streamlit, n8n, Nextcloud</li>
+                        <li>Jupyter Notebooks</li>
+                        <li>Ollama (Local LLMs)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section>
+            <h3 class="text-2xl font-bold text-white mb-6 border-b border-slate-700 pb-2">Featured Projects</h3>
+            <div class="space-y-6">
+                <!-- Project 1 -->
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-bold text-white">World Monitor</h4>
+                        <span class="text-xs bg-blue-900 text-blue-300 px-2 py-1 rounded font-mono">Python / SQL / APIs</span>
+                    </div>
+                    <p class="text-sm mb-4">Developed an open-source geopolitical intelligence dashboard. Integrated various data streams to provide a unified, accessible view of global events.</p>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-bold text-white">Automated Mail Triage Engine</h4>
+                        <span class="text-xs bg-blue-900 text-blue-300 px-2 py-1 rounded font-mono">Google Apps Script</span>
+                    </div>
+                    <p class="text-sm mb-4">Engineered a custom script bundle to parse, label, and autonomously archive high volumes of email communications, streamlining application tracking and workflow efficiency.</p>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-bold text-white">Containerized Home Lab Infrastructure</h4>
+                        <span class="text-xs bg-blue-900 text-blue-300 px-2 py-1 rounded font-mono">Docker / Networking</span>
+                    </div>
+                    <p class="text-sm mb-4">Architected and deployed a self-hosted environment using Raspberry Pi and spare hardware. Implemented Pi-hole for network-wide DNS filtering and configured secure remote access tunnels via Tailscale and WireGuard.</p>
+                </div>
+                <!-- Project 4 -->
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-bold text-white">Sky Skipper</h4>
+                        <span class="text-xs bg-blue-900 text-blue-300 px-2 py-1 rounded font-mono">Mobile App Development</span>
+                    </div>
+                    <p class="text-sm mb-4">Designed, developed, and successfully published an original mobile game application to the Google Play Store.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section>
+            <h3 class="text-2xl font-bold text-white mb-6 border-b border-slate-700 pb-2">Professional Experience</h3>
+            <div class="relative border-l border-slate-700 ml-3 space-y-8">
+                <!-- Role -->
+                <div class="pl-6 relative">
+                    <div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[6.5px] top-1.5"></div>
+                    <h4 class="text-lg font-bold text-white">ERP Business Process Analyst II</h4>
+                    <div class="text-blue-400 text-sm mb-2 font-mono">City of Albuquerque | Sept 2024 - Present</div>
+                </div>
+                <!-- Role -->
+                <div class="pl-6 relative">
+                    <div class="absolute w-3 h-3 bg-slate-500 rounded-full -left-[6.5px] top-1.5"></div>
+                    <h4 class="text-lg font-bold text-white">Adjunct IT Instructor (CIS100B / CompTIA Tech+)</h4>
+                    <div class="text-slate-400 text-sm mb-2 font-mono">California Institute of Applied Technology</div>
+                </div>
+                <!-- Role -->
+                <div class="pl-6 relative">
+                    <div class="absolute w-3 h-3 bg-slate-500 rounded-full -left-[6.5px] top-1.5"></div>
+                    <h4 class="text-lg font-bold text-white">Business Analyst & Project Manager</h4>
+                    <div class="text-slate-400 text-sm mb-2 font-mono">Trinium Technologies (a WiseTech Global acquisition)</div>
+                </div>
+                <!-- Role -->
+                <div class="pl-6 relative">
+                    <div class="absolute w-3 h-3 bg-slate-500 rounded-full -left-[6.5px] top-1.5"></div>
+                    <h4 class="text-lg font-bold text-white">Prior Engineering & Analytics Engagements</h4>
+                    <div class="text-slate-400 text-sm mb-2 font-mono">AutoFi (Rocket Auto), Houlihan Lokey, Blizzard Entertainment, The Walt Disney Company</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h3 class="text-2xl font-bold text-white mb-6 border-b border-slate-700 pb-2">Education & Academics</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-800 p-5 rounded-lg border border-slate-700 shadow-sm">
+                    <h4 class="font-bold text-white">M.Sc. in Leadership</h4>
+                    <p class="text-sm text-slate-400 mb-1">Emphasis on Leading & Managing Technical Projects</p>
+                    <p class="text-xs text-blue-400 font-mono">Northeastern University</p>
+                </div>
+                <div class="bg-slate-800 p-5 rounded-lg border border-slate-700 shadow-sm">
+                    <h4 class="font-bold text-white">B.Sc. in Business Information Systems</h4>
+                    <p class="text-sm text-slate-400 mb-1">Foundational database and systems architecture.</p>
+                    <p class="text-xs text-blue-400 font-mono">Oregon State University</p>
+                </div>
+                 <div class="bg-slate-800 p-5 rounded-lg border border-slate-700 shadow-sm md:col-span-2">
+                    <h4 class="font-bold text-white">Continuing Education</h4>
+                    <p class="text-sm text-slate-400 mb-1">Active coursework in Data Science (CIM 8) and Computer Science concepts.</p>
+                    <p class="text-xs text-blue-400 font-mono">Saddleback College</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-800 mt-12 py-8 text-center text-slate-500 text-sm font-mono">
+        <p>&copy; 2026 Jaina McGregor. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
