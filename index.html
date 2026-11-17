@@ -1,7 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jaina McGregor | Systems Administration, Software & Automation</title><meta name="description" content="Systems administrator and technical generalist: server migrations, SolarWinds monitoring, SQL, Python, Linux, QA testing, and home-lab automation.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-<script>document.documentElement.classList.add("js")</script><style>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jaina McGregor | Systems Engineering, Cloud Automation &amp; Infrastructure</title>
+<meta name="description" content="Systems Administrator, Integration Engineer, and Automation Developer specializing in Linux/Windows infrastructure, SQL performance tuning, serverless pipelines, Docker, and production QA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<style>
 :root{--bg:#0a0f1e;--card:#121a33;--card2:#0e1529;--line:#222c4f;--tx:#c5cee3;--hd:#f5f7fb;--mu:#8793b3;--ac:#a78bfa;--ok:#34d399;--wn:#fbbf24;--er:#f87171}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
@@ -20,16 +27,14 @@ nav a:hover,nav a.on{color:var(--hd);background:var(--card)}
 .hero{padding:4.5rem 0 3.2rem}
 h1{font-size:clamp(2.3rem,6vw,3.7rem);color:var(--hd);line-height:1.08;letter-spacing:-.035em;font-weight:800}
 .role{color:var(--ac);font-size:clamp(1.05rem,2.5vw,1.35rem);font-weight:600;margin:.7rem 0 1.1rem}
-.lead{max-width:800px;font-size:1.08rem}
+.lead{max-width:820px;font-size:1.08rem}
 .btns{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.6rem 0 0}
-.btn{display:inline-block;padding:.65rem 1.15rem;border-radius:8px;font-weight:600;font-size:.92rem;text-decoration:none;background:var(--ac);color:#06101f;transition:.2s;border:1px solid var(--ac)}
+.btn{display:inline-block;padding:.65rem 1.15rem;border-radius:8px;font-weight:600;font-size:.92rem;text-decoration:none;background:var(--ac);color:#06101f;transition:.2s;border:1px solid var(--ac);cursor:pointer}
 .btn:hover{filter:brightness(1.12);transform:translateY(-1px)}
 .btn.g{background:transparent;color:var(--hd);border-color:var(--line)}.btn.g:hover{border-color:var(--ac)}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.8rem;margin-top:2rem}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
 .stat b{display:block;font-size:1.9rem;color:var(--hd);line-height:1.2}.stat span{font-size:.82rem;color:var(--mu)}
-.quote{border-left:3px solid var(--ac);background:color-mix(in srgb,var(--ac) 8%,transparent);padding:1rem 1.25rem;border-radius:0 10px 10px 0;margin-top:1.8rem;max-width:860px;color:var(--hd)}
-.note{border-left:3px solid var(--wn);background:rgba(251,191,36,.07);padding:.85rem 1.1rem;border-radius:0 8px 8px 0;font-size:.92rem;margin-top:1.6rem;max-width:860px}
 section{padding:3.6rem 0;border-top:1px solid var(--line)}
 h2{color:var(--hd);font-size:1.8rem;letter-spacing:-.02em;line-height:1.2}
 .sub{color:var(--mu);margin:.4rem 0 1.8rem;max-width:760px}
@@ -53,63 +58,456 @@ ul.l{list-style:none}ul.l li{padding-left:1.1rem;position:relative;font-size:.93
 .acc-in>p{font-size:.95rem}
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin-top:.9rem}
 .cols h5{color:var(--hd);font-size:.88rem;margin-bottom:.2rem}.cols p,.cols li{font-size:.92rem}
-.tabs,.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.1rem}
-.tabs button,.chips button,.sm{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:.45rem .85rem;font:500 .85rem Inter,sans-serif;cursor:pointer;transition:.2s}
-.tabs button:hover,.chips button:hover,.sm:hover{border-color:var(--ac);color:var(--hd)}
-.tabs button.on,.chips button.on{background:var(--ac);color:#06101f;border-color:var(--ac)}
-.panel{display:none}.panel.on{display:block;animation:fade .3s}
-@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.1rem}
+.chips button{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:.45rem .85rem;font:500 .85rem Inter,sans-serif;cursor:pointer;transition:.2s}
+.chips button:hover{border-color:var(--ac);color:var(--hd)}
+.chips button.on{background:var(--ac);color:#06101f;border-color:var(--ac)}
 .lab{background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:1.4rem;margin-bottom:1.2rem}
 .lab-h{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.6rem;margin-bottom:1rem}.lab-h b{color:var(--hd);font-size:1.1rem}
-.split{display:grid;grid-template-columns:minmax(200px,1fr) 2fr;gap:1rem}
-@media(max-width:760px){.split{grid-template-columns:1fr}}
-.pick{display:flex;flex-direction:column;gap:.4rem}
-.pick button{text-align:left;background:var(--card);border:1px solid var(--line);color:var(--tx);border-radius:8px;padding:.55rem .8rem;cursor:pointer;font:500 .85rem Inter,sans-serif;transition:.2s}
-.pick button:hover{border-color:var(--ac)}.pick button.on{border-color:var(--ac);background:color-mix(in srgb,var(--ac) 14%,var(--card));color:var(--hd)}
-.detail{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.2rem}
-.detail h4{color:var(--hd);margin-bottom:.2rem}.detail dt{color:var(--ac);font-size:.8rem;margin-top:.7rem}.detail dd{font-size:.92rem}
-label.f{display:block;font-size:.85rem;color:var(--mu);margin-bottom:.8rem}
-input[type=number],select{background:var(--bg);border:1px solid var(--line);color:var(--hd);padding:.45rem .6rem;border-radius:6px;font:inherit;width:100%;max-width:200px;display:block;margin-top:.25rem}
-input[type=range]{width:100%;accent-color:var(--ac);display:block;margin-top:.3rem}
-.flow{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:.8rem 0}
-.step{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.55rem .8rem;font-size:.85rem;text-align:center;transition:.3s}
-.step small{display:block;color:var(--mu);font-size:.72rem}
-.step.ok{border-color:var(--ok);color:var(--ok)}.step.bad{border-color:var(--er);color:var(--er)}.step.hi{border-color:var(--ac);color:var(--hd)}
-.arr{color:var(--mu)}
-.bar{height:10px;background:var(--bg);border-radius:6px;overflow:hidden;border:1px solid var(--line)}.bar i{display:block;height:100%;background:var(--ac);transition:width .4s}
-.tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
-table{width:100%;border-collapse:collapse;font-size:.88rem;text-align:left}
-th{background:var(--card);color:var(--hd);padding:.7rem .9rem;border-bottom:1px solid var(--line);white-space:nowrap}
-td{padding:.7rem .9rem;border-bottom:1px solid var(--line)}tr:last-child td{border-bottom:0}
 .pill{font-size:.72rem;padding:.12rem .5rem;border-radius:99px;font-weight:600;white-space:nowrap}
-.pill.ok{background:rgba(52,211,153,.15);color:var(--ok)}.pill.wn{background:rgba(251,191,36,.15);color:var(--wn)}.pill.er{background:rgba(248,113,113,.15);color:var(--er)}.pill.id{background:rgba(255,255,255,.07);color:var(--mu)}
+.pill.ok{background:rgba(52,211,153,.15);color:var(--ok)}.pill.wn{background:rgba(251,191,36,.15);color:var(--wn)}
 .term{font:.82rem/1.7 "Fira Code",ui-monospace,monospace;background:#05080f;border:1px solid var(--line);border-radius:10px;padding:1rem;overflow-x:auto;max-height:260px;overflow-y:auto}
 .term .c{color:var(--mu)}.term .i{color:var(--ac)}.term .o{color:var(--ok)}.term .w{color:var(--wn)}
 .mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;margin-bottom:1rem}
 .mini div{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:.8rem;text-align:center}.mini b{display:block;font-size:1.5rem;color:var(--ac)}.mini span{font-size:.75rem;color:var(--mu)}
-.dl{text-align:center;border:1px dashed var(--line)}
 footer{border-top:1px solid var(--line);padding:2rem 0;text-align:center;color:var(--mu);font-size:.88rem}footer a{margin:0 .5rem}
 .js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.js .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
 @media(max-width:700px){.nav .wrap{flex-direction:column;height:auto;padding:.6rem 1.25rem}nav{width:100%}.hero{padding-top:2.5rem}}
-</style></head>
-<body><header class="nav"><div class="wrap"><a class="brand" href="#top">Jaina McGregor <span>| Systems, Software &amp; Automation</span></a><nav><a href="#stack">Stack</a><a href="#ops">Ops Report</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#edu">Credentials</a></nav></div></header>
-<main id="top"><div class="hero"><div class="wrap"><h1>Jaina McGregor</h1><div class="role">Systems Administrator | Software &amp; Automation | QA</div><p class="lead">Technically hands-on IT professional spanning systems administration, software configuration, QA testing, and infrastructure monitoring. Comfortable across the stack: server migrations and network hardware testing, SQL-driven system configuration, and production QA, with working knowledge of C#, Python, Java, and both Windows and Linux environments.</p><div class="btns"><a class="btn" href="mailto:JainaMcGregor@gmail.com">Contact me</a><a class="btn g" href="https://linkedin.com/in/jainamcgregor" target="_blank" rel="noopener">LinkedIn</a><a class="btn g" href="https://github.com/jkmcgregor" target="_blank" rel="noopener">GitHub</a></div><div class="stats"><div class="stat"><b data-n="40" data-s="+">0</b><span>servers migrated to SolarWinds monitoring</span></div><div class="stat"><b data-n="300" data-s="+">0</b><span>tickets routed, 20+ resolved in under a day on average</span></div><div class="stat"><b data-n="5000" data-s="+">0</b><span>end users supported at Tier I/II</span></div><div class="stat"><b data-n="300" data-s="+">0</b><span>lab computers maintained</span></div></div></div></div><section id="stack" class="reveal"><div class="wrap"><h2>Technical Arsenal</h2><p class="sub">Languages, systems, and tooling I work with.</p><div class="grid"><div class="card"><h3>Languages</h3><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">C#</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">Java</span><span class="tag">VB.NET</span><span class="tag">JavaScript</span><span class="tag">Google Apps Script</span></div></div><div class="card"><h3>Systems &amp; Infrastructure</h3><div class="tags"><span class="tag">Windows</span><span class="tag">Linux (Ubuntu/CentOS/Debian)</span><span class="tag">macOS</span><span class="tag">Docker</span><span class="tag">Pi-hole DNS</span><span class="tag">Tailscale</span><span class="tag">WireGuard</span><span class="tag">Cloudflare</span><span class="tag">SolarWinds</span></div></div><div class="card"><h3>Data, Integration &amp; Tools</h3><div class="tags"><span class="tag">JSON / XML</span><span class="tag">REST APIs</span><span class="tag">Webhooks</span><span class="tag">EDI</span><span class="tag">Postman</span><span class="tag">n8n</span><span class="tag">Nextcloud</span><span class="tag">Ollama (local LLMs)</span><span class="tag">Streamlit</span><span class="tag">Jupyter</span><span class="tag">Ixia</span><span class="tag">JIRA</span></div></div></div></div></section><section id="ops" class="reveal"><div class="wrap"><h2>Sample Operational Deliverable</h2><p class="sub">A mock weekly briefing showing how I summarize health, automation, and incident response. Numbers are illustrative.</p>
-<div class="lab"><div class="lab-h"><div><b>Automated System Health &amp; Telemetry Summary</b><br><span style="color:var(--mu);font-size:.85rem">Example weekly operations briefing the way I would structure one for my home-lab stack</span></div><span class="pill wn">Mock data &middot; illustrative</span></div>
-<div class="mini" id="kpis">
-<div><b data-n="9998" id="k0">0</b><span>Docker uptime %</span></div><div><b data-n="14200" id="k1">0</b><span>DNS queries blocked</span></div><div><b data-n="842" id="k2">0</b><span>emails auto-triaged</span></div><div><b data-n="12" id="k3">0</b><span>avg API latency (s)</span></div></div>
-<div class="btns" style="margin:0 0 1rem"><button class="btn g" id="sim">Simulate new week</button><span class="pill ok" id="stat">STATUS: HEALTHY</span></div>
-<div class="chips" id="lvl"><button class="on" data-l="all">All</button><button data-l="OK">Success</button><button data-l="ALERT">Alerts</button></div>
-<div class="term" id="tl"></div></div>
-</div></section><section id="projects" class="reveal"><div class="wrap"><h2>Engineering Projects</h2><p class="sub">Filter by skill, then expand a project for details.</p><div class="chips" data-filter><button class="on" data-f="all">All</button><button data-f="python">Python</button><button data-f="sql">SQL</button><button data-f="infra">Infrastructure</button><button data-f="monitoring">Monitoring</button><button data-f="qa">QA &amp; Testing</button><button data-f="automation">Automation</button></div><div class="acc" data-tags="python sql automation"><button class="acc-h" aria-expanded="false"><span><b>World Monitor</b><em>Open-source geopolitical intelligence dashboard</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Integrated live data streams and backend queries into a unified, accessible view of global metrics.</p><div class="cols"><div><h5>Stack</h5><p>Python, SQL, REST APIs</p></div><div><h5>Skills shown</h5><p>API integration, data pipelines, dashboard design</p></div></div><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">APIs</span></div></div></div></div><div class="acc" data-tags="infra monitoring automation"><button class="acc-h" aria-expanded="false"><span><b>Containerized Home Lab</b><em>Self-hosted infrastructure</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Architected a self-hosted environment on Raspberry Pi and spare hardware.</p><div class="cols"><div><h5>What I built</h5><ul class="l"><li>Network-wide DNS filtering with Pi-hole</li><li>Secure remote access via Tailscale and WireGuard</li><li>Containerized services with Docker, including Nextcloud, n8n, and local LLMs via Ollama</li></ul></div><div><h5>Skills shown</h5><p>Linux administration, networking, container orchestration, self-service tooling</p></div></div><div class="tags"><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Networking</span></div></div></div></div><div class="acc" data-tags="automation"><button class="acc-h" aria-expanded="false"><span><b>Automated Mail Triage Engine</b><em>Google Apps Script</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Custom script bundle that parses, labels, and archives high volumes of email, streamlining application tracking.</p><div class="cols"><div><h5>Stack</h5><p>Google Apps Script, JavaScript</p></div><div><h5>Skills shown</h5><p>Workflow automation, pattern-based parsing</p></div></div><div class="tags"><span class="tag">Apps Script</span><span class="tag">Automation</span></div></div></div></div><div class="acc" data-tags="qa"><button class="acc-h" aria-expanded="false"><span><b>Sky Skipper</b><em>Published mobile game</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Designed, developed, and published an original, monetized mobile game on the Google Play Store.</p><div class="cols"><div><h5>Skills shown</h5><p>End-to-end software delivery: design, development, store publication, monetization</p></div></div><div class="tags"><span class="tag">Mobile</span><span class="tag">Game Dev</span><span class="tag">Unity</span></div></div></div></div><div class="acc" data-tags="python"><button class="acc-h" aria-expanded="false"><span><b>Fish Hunt</b><em>Harvard CS50 game</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Built a functional game environment for Harvard&rsquo;s CS50 course.</p><div class="cols"><div><h5>Skills shown</h5><p>Programming fundamentals, game loop and state design</p></div></div><div class="tags"><span class="tag">Game Dev</span><span class="tag">CS50</span></div></div></div></div></div></section><section id="experience" class="reveal"><div class="wrap"><h2>Hands-On Experience</h2><p class="sub">Use the filter above to narrow both projects and roles.</p><div class="acc open" data-tags="infra monitoring sql"><button class="acc-h" aria-expanded="true"><span><b>Systems Administrator / Engineering Intern</b><em>Blizzard Entertainment</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>The clearest sysadmin credential in my background.</p><div class="cols"><div><h5>Delivered</h5><ul class="l"><li>Migrated 40+ servers to SolarWinds, establishing a new monitoring baseline and reducing error-detection time</li><li>Standardized request workflows through a service catalog and technical runbooks for the BI team</li><li>Routed 300+ tickets and resolved 20+, with average turnaround under one day</li></ul></div><div><h5>Tools</h5><p>SolarWinds, MS Project, JIRA, Visio, SQL</p></div></div><div class="tags"><span class="tag">SolarWinds</span><span class="tag">Runbooks</span><span class="tag">Ticketing</span></div></div></div></div><div class="acc" data-tags="sql qa"><button class="acc-h" aria-expanded="false"><span><b>Senior Configuration Specialist</b><em>OceanX &middot; Order Management platform</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>SQL and system-configuration depth with real production ownership.</p><div class="cols"><div><h5>Delivered</h5><ul class="l"><li>Configured offer and item-code data, backend jobs, and payment gateway setups</li><li>Used SQL to inspect database schema and validate data</li><li>Conducted UAT on new application releases</li></ul></div><div><h5>Scaled</h5><p>OMS/WMS architecture for high-volume direct-to-consumer fulfillment</p></div></div><div class="tags"><span class="tag">SQL</span><span class="tag">Backend Jobs</span><span class="tag">UAT</span></div></div></div></div><div class="acc" data-tags="sql infra monitoring"><button class="acc-h" aria-expanded="false"><span><b>Technical Team Member</b><em>FAST Enterprises</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Production support on a government-agency implementation.</p><div class="cols"><div><h5>Delivered</h5><ul class="l"><li>Monitored production and development environments and addressed performance issues through database tuning</li><li>Troubleshot across application tiers with SQL and VB.NET</li><li>Provided technical consultation on application architecture</li></ul></div></div><div class="tags"><span class="tag">SQL</span><span class="tag">VB.NET</span><span class="tag">Database Tuning</span></div></div></div></div><div class="acc" data-tags="qa"><button class="acc-h" aria-expanded="false"><span><b>Product Quality &amp; UX Auditor</b><em>Electronic Arts</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Ongoing technical QA on pre-release builds.</p><div class="cols"><div><h5>Delivered</h5><ul class="l"><li>Functional QA testing and heuristic analysis of pre-release builds</li><li>Documented reproduction steps and evaluated UI state stability with engineering teams</li><li>Logged and prioritized defects in internal bug-tracking tools</li></ul></div></div><div class="tags"><span class="tag">Functional QA</span><span class="tag">Heuristic Analysis</span><span class="tag">Defect Tracking</span></div></div></div></div><div class="acc" data-tags="sql qa"><button class="acc-h" aria-expanded="false"><span><b>ERP Business Process Analyst II</b><em>City of Albuquerque</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>SQL-backed diagnosis and regression testing in a PeopleSoft environment.</p><div class="cols"><div><h5>Delivered</h5><ul class="l"><li>Diagnosed production errors across major upgrade cycles</li><li>Designed and executed regression testing achieving zero-downtime deployment</li><li>Compared PeopleSoft report logic against direct SQL to find and correct silently filtered data</li></ul></div></div><div class="tags"><span class="tag">PeopleSoft</span><span class="tag">SQL</span><span class="tag">Regression Testing</span></div></div></div></div><div class="acc" data-tags="qa infra"><button class="acc-h" aria-expanded="false"><span><b>Student Hardware Tester</b><em>Business Solutions Group, Oregon State University</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Networking hardware and server fundamentals.</p><div class="cols"><div><h5>Delivered</h5><ul class="l"><li>Tested pre-production Hewlett-Packard prototype servers against assigned test plans</li><li>Used Ixia to generate traffic and stress-test networking components; developed test plans</li><li>Documented test cases and results; reported defects through tracking tools</li></ul></div></div><div class="tags"><span class="tag">Ixia</span><span class="tag">Hardware Testing</span><span class="tag">Test Plans</span></div></div></div></div><div class="acc" data-tags="infra"><button class="acc-h" aria-expanded="false"><span><b>Field Service Technician &amp; Trainer</b><em>Xerox equipment, via Acara Solutions</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Hands-on field work.</p><div class="cols"><div><h5>Delivered</h5><ul class="l"><li>Installation, diagnostic repair, and preventative servicing of multifunction equipment</li><li>On-site training for client staff on operation and troubleshooting</li></ul></div></div><div class="tags"><span class="tag">Field Service</span><span class="tag">Diagnostics</span></div></div></div></div><div class="acc" data-tags="infra"><button class="acc-h" aria-expanded="false"><span><b>IT Intern</b><em>ProWorks</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Telephony and web maintenance.</p><div class="cols"><div><h5>Delivered</h5><ul class="l"><li>Managed the Asterisk PBX system</li><li>Supported FTP and WordPress site maintenance</li><li>Basic troubleshooting and configuration for internal IT requests</li></ul></div></div><div class="tags"><span class="tag">Asterisk PBX</span><span class="tag">WordPress</span><span class="tag">FTP</span></div></div></div></div><div class="acc" data-tags="infra"><button class="acc-h" aria-expanded="false"><span><b>Student Support Technician &amp; Supervisor</b><em>Oregon State University College of Business</em></span><i></i></button><div class="acc-b"><div class="acc-in"><p>Tier I/II support at scale.</p><div class="cols"><div><h5>Delivered</h5><ul class="l"><li>Supported 5,000+ end users and maintained 300+ lab computers</li><li>Built inventory controls that cut machine downtime by 30%</li><li>Promoted to Supervisor within six months, leading a team of 10+</li></ul></div></div><div class="tags"><span class="tag">Tier I/II Support</span><span class="tag">Asset Control</span></div></div></div></div></div></section><section id="edu" class="reveal"><div class="wrap"><h2>Education &amp; Credentials</h2><p class="sub"></p><div class="grid"><div class="card"><h3>Education</h3><p><b style='color:var(--hd)'>M.S., Leadership</b><br>Leading &amp; Managing Technical Projects<br>Northeastern University</p><p style='margin-top:.6rem'><b style='color:var(--hd)'>B.S., Business Information Systems</b><br>Oregon State University</p></div><div class="card"><h3>Certifications</h3><ul class="l"><li>CompTIA Tech+ and IT Fundamentals</li><li>W3Schools SQL</li><li>Unity Essentials</li></ul></div></div></div></section></main>
-<footer><div class="wrap"><p>Jaina McGregor &middot; Systems, Software &amp; Automation</p><p style="margin-top:.5rem"><a href="mailto:JainaMcGregor@gmail.com">Email</a><a href="https://linkedin.com/in/jainamcgregor" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/jkmcgregor" target="_blank" rel="noopener">GitHub</a></p></div></footer>
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Jaina McGregor <span>| Systems, Software &amp; Automation</span></a>
+    <nav>
+      <a href="#stack">Stack</a>
+      <a href="#ops">Ops Telemetry</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#edu">Credentials</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Jaina McGregor</h1>
+      <div class="role">Systems Engineering &middot; Infrastructure Automation &middot; Integration &amp; QA</div>
+      <p class="lead">Hands-on systems and software engineer spanning Linux/Windows infrastructure, database performance tuning, API/EDI integration pipelines, and automated quality engineering. Experienced in migrating production server fleets, building containerized self-hosted environments, writing Python and SQL automation, and validating mission-critical enterprise releases with zero downtime.</p>
+      <div class="btns">
+        <a class="btn" href="mailto:JainaMcGregor@gmail.com">Contact me</a>
+        <a class="btn g" href="#ops">Inspect telemetry console</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b data-n="40" data-s="+">0</b><span>production servers migrated to SolarWinds monitoring</span></div>
+        <div class="stat"><b data-n="300" data-s="+">0</b><span>production tickets triaged (&lt;24h avg resolution)</span></div>
+        <div class="stat"><b data-n="5000" data-s="+">0</b><span>enterprise &amp; academic end users supported</span></div>
+        <div class="stat"><b data-n="300" data-s="+">0</b><span>lab workstations maintained (-30% downtime)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="stack" class="reveal">
+    <div class="wrap">
+      <h2>Technical Arsenal</h2>
+      <p class="sub">Production languages, infrastructure platforms, serverless tooling, and testing suites.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Languages &amp; Scripting</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL (T-SQL / Oracle)</span>
+            <span class="tag">C#</span>
+            <span class="tag">JavaScript (ES6+)</span>
+            <span class="tag">C / C++</span>
+            <span class="tag">Java</span>
+            <span class="tag">VB.NET</span>
+            <span class="tag">Bash / PowerShell</span>
+            <span class="tag">Google Apps Script</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Systems, Cloud &amp; Networking</h3>
+          <div class="tags">
+            <span class="tag">Linux (Ubuntu/Debian/CentOS)</span>
+            <span class="tag">Windows Server</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Cloudflare Workers/Pages</span>
+            <span class="tag">Modal Serverless</span>
+            <span class="tag">Tailscale / WireGuard</span>
+            <span class="tag">Pi-hole DNS</span>
+            <span class="tag">SolarWinds</span>
+            <span class="tag">Asterisk PBX</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Integration, AI &amp; QA Tooling</h3>
+          <div class="tags">
+            <span class="tag">REST APIs &amp; Webhooks</span>
+            <span class="tag">JSON / XML / EDI</span>
+            <span class="tag">n8n Orchestration</span>
+            <span class="tag">Ollama (Local LLMs)</span>
+            <span class="tag">MCP Protocol</span>
+            <span class="tag">Pandas / scikit-learn</span>
+            <span class="tag">Postman</span>
+            <span class="tag">Ixia Traffic Gen</span>
+            <span class="tag">JIRA / Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ops" class="reveal">
+    <div class="wrap">
+      <h2>Operational Telemetry &amp; Runbook Simulation</h2>
+      <p class="sub">Interactive model of automated health monitoring, self-healing container orchestration, and webhook queue telemetry.</p>
+      <div class="lab">
+        <div class="lab-h">
+          <div>
+            <b>Automated Infrastructure Health &amp; Telemetry Console</b><br>
+            <span style="color:var(--mu);font-size:.85rem">Simulated weekly stack metrics modeled on home-lab and serverless automation pipelines</span>
+          </div>
+          <span class="pill wn">Interactive Simulation</span>
+        </div>
+        <div class="mini" id="kpis">
+          <div><b id="k0">99.98%</b><span>Container stack uptime</span></div>
+          <div><b id="k1">14.2k</b><span>DNS threats/trackers blocked</span></div>
+          <div><b id="k2">842</b><span>webhooks &amp; events triaged</span></div>
+          <div><b id="k3">1.2s</b><span>avg pipeline latency</span></div>
+        </div>
+        <div class="btns" style="margin:0 0 1rem">
+          <button class="btn g" id="sim">Simulate telemetry cycle</button>
+          <span class="pill ok" id="stat">STATUS: HEALTHY</span>
+        </div>
+        <div class="chips" id="lvl">
+          <button class="on" data-l="all">All Events</button>
+          <button data-l="OK">Info / Resolved</button>
+          <button data-l="ALERT">Alerts</button>
+        </div>
+        <div class="term" id="tl"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <div class="wrap">
+      <h2>Engineering &amp; Automation Projects</h2>
+      <p class="sub">Filter by technical domain, then expand any build to inspect architecture and implementation.</p>
+      <div class="chips" data-filter>
+        <button class="on" data-f="all">All Builds</button>
+        <button data-f="python">Python &amp; ML</button>
+        <button data-f="sql">SQL &amp; Data</button>
+        <button data-f="infra">Infrastructure &amp; Edge</button>
+        <button data-f="automation">Automation &amp; AI</button>
+        <button data-f="qa">Software &amp; QA</button>
+      </div>
+
+      <div class="acc open" data-tags="infra automation">
+        <button class="acc-h" aria-expanded="true"><span><b>Containerized Self-Hosted Infrastructure &amp; Mesh Network</b><em>Linux, Docker, WireGuard/Tailscale, Pi-hole, Ollama</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Architected and maintain a resilient multi-node home-lab environment running containerized services, network-level DNS sinkholing, and zero-trust mesh routing.</p>
+            <div class="cols">
+              <div>
+                <h5>Architecture &amp; Services</h5>
+                <ul class="l">
+                  <li>Network-wide DNS ad/tracker blocking on Raspberry Pi hardware via Pi-hole</li>
+                  <li>Encrypted overlay networking and remote access via Tailscale and WireGuard</li>
+                  <li>Containerized services with Docker, including Nextcloud, n8n workflow automation, and local LLM inference via Ollama</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Engineering Focus</h5>
+                <p>Linux system hardening, reverse-proxy routing, automated container updates, and resource-threshold alerting.</p>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">WireGuard</span><span class="tag">Pi-hole</span><span class="tag">Ollama</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc" data-tags="automation python infra">
+        <button class="acc-h" aria-expanded="false"><span><b>Compliance-as-Code MCP Orchestrator &amp; Governance Prototypes</b><em>Python, Model Context Protocol, Serverless Edge, Static Web</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Engineered browser-based interactive engines and an MCP orchestrator prototype designed to automate risk tiering, audit readiness, and policy-as-code validation.</p>
+            <div class="cols">
+              <div>
+                <h5>Components Built</h5>
+                <ul class="l">
+                  <li>Compliance-as-Code MCP Orchestrator developed for the Building with IBM Bob hackathon</li>
+                  <li>Interactive AI Risk Tiering &amp; Governance Engine deployed as a zero-backend web application</li>
+                  <li>Continuous Compliance &amp; Audit Readiness Simulator with deterministic scoring logic</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Engineering Focus</h5>
+                <p>Tool-calling orchestration, deterministic rule evaluation, zero-backend edge deployment, and interactive state modeling.</p>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">MCP</span><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">Edge Deployment</span><span class="tag">Automation</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc" data-tags="python sql automation">
+        <button class="acc-h" aria-expanded="false"><span><b>World Monitor &amp; Predictive Demand Pipelines</b><em>Python, SQL, REST APIs, Pandas, scikit-learn</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Built automated data ingestion pipelines and regression modeling scripts that transform raw telemetry and external API feeds into structured analytical views.</p>
+            <div class="cols">
+              <div>
+                <h5>Implementation</h5>
+                <ul class="l">
+                  <li>Integrated asynchronous REST endpoints into normalized SQL tables for geopolitical and operational tracking</li>
+                  <li>Built multivariate regression models in Python (Pandas/scikit-learn) with out-of-sample train/test splits and data-leakage guardrails</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Engineering Focus</h5>
+                <p>Schema normalization, API payload parsing, baseline error benchmarking, and leak-free feature engineering.</p>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">REST APIs</span><span class="tag">scikit-learn</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc" data-tags="automation infra">
+        <button class="acc-h" aria-expanded="false"><span><b>Zero-Overhead Serverless Routing &amp; Mail Triage Engine</b><em>Cloudflare Workers, n8n, Google Apps Script, Python</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Designed event-driven automation workflows across serverless edge platforms to parse, route, and archive high-volume operational communications without dedicated VM overhead.</p>
+            <div class="cols">
+              <div>
+                <h5>Stack</h5>
+                <p>Cloudflare Workers/Pages, n8n webhooks, Google Apps Script, JavaScript, Python</p>
+              </div>
+              <div>
+                <h5>Engineering Focus</h5>
+                <p>Regex/pattern parsing, idempotent webhook handling, rate-limit resilience, and automated state tagging.</p>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">Cloudflare Workers</span><span class="tag">n8n</span><span class="tag">Apps Script</span><span class="tag">Serverless</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc" data-tags="qa python">
+        <button class="acc-h" aria-expanded="false"><span><b>Sky Skipper &amp; CS50 Game Engine Builds</b><em>C#, Unity, Python, Google Play Release Pipeline</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Designed, programmed, tested, and published an original monetized Android title (Sky Skipper) on Google Play alongside game-loop implementations for Harvard CS50.</p>
+            <div class="cols">
+              <div>
+                <h5>Engineering Focus</h5>
+                <p>Object-oriented C# state machines, collision/physics loops, APK signing and Play Console release management, and device compatibility QA.</p>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">C#</span><span class="tag">Unity</span><span class="tag">Mobile Release</span><span class="tag">QA</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="reveal">
+    <div class="wrap">
+      <h2>Engineering &amp; Operations Experience</h2>
+      <p class="sub">Filterable across infrastructure, database engineering, integration delivery, and hardware/software QA.</p>
+
+      <div class="acc open" data-tags="infra automation sql">
+        <button class="acc-h" aria-expanded="true"><span><b>Systems Administrator</b><em>Blizzard Entertainment</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Managed enterprise server monitoring, operational runbooks, and high-volume incident resolution for Business Intelligence infrastructure.</p>
+            <div class="cols">
+              <div>
+                <h5>Key Technical Deliverables</h5>
+                <ul class="l">
+                  <li>Migrated 40+ production servers to SolarWinds, establishing baseline telemetry thresholds and cutting incident detection latency</li>
+                  <li>Authored standardized technical runbooks and service catalog workflows for BI infrastructure operations</li>
+                  <li>Triaged and routed 300+ operational tickets while directly resolving 20+ complex system issues in under 24 hours on average</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Environment</h5>
+                <p>SolarWinds, Windows/Linux Servers, SQL, JIRA, Visio</p>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">SolarWinds</span><span class="tag">Server Migration</span><span class="tag">Runbooks</span><span class="tag">SQL</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc" data-tags="sql infra">
+        <button class="acc-h" aria-expanded="false"><span><b>Technical Team Member (Production Support &amp; DB Tuning)</b><em>FAST Enterprises</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Delivered tier-3 production support, SQL database tuning, and multi-tier debugging on a large-scale government agency software implementation.</p>
+            <div class="cols">
+              <div>
+                <h5>Key Technical Deliverables</h5>
+                <ul class="l">
+                  <li>Monitored production and staging environments, resolving bottlenecks via SQL query optimization and index/database tuning</li>
+                  <li>Debugged defects across UI, middle-tier, and database layers using SQL and VB.NET</li>
+                  <li>Advised engineering and agency leads on application architecture and batch job stability</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">SQL Tuning</span><span class="tag">VB.NET</span><span class="tag">Production Support</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc" data-tags="automation sql qa">
+        <button class="acc-h" aria-expanded="false"><span><b>Enterprise Delivery &amp; SaaS/EDI Integration Lead</b><em>AutoFi &middot; WiseTech Global (Trinium)</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Led technical implementation and API/EDI data integration pipelines for enterprise automotive and logistics platforms.</p>
+            <div class="cols">
+              <div>
+                <h5>Key Technical Deliverables</h5>
+                <ul class="l">
+                  <li>Architected JSON/REST webhook mappings, payload validation rules, and dead-letter error handling across enterprise SaaS integrations</li>
+                  <li>Managed end-to-end EDI data transmission integrations, resolving schema mismatches and partner connectivity issues</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">REST APIs</span><span class="tag">JSON / EDI</span><span class="tag">Integration Engineering</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc" data-tags="sql qa">
+        <button class="acc-h" aria-expanded="false"><span><b>Senior Configuration Specialist</b><em>OceanX &middot; Order Management Platform</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Owned backend system configuration, SQL schema validation, and release UAT for high-volume direct-to-consumer OMS/WMS platforms.</p>
+            <div class="cols">
+              <div>
+                <h5>Key Technical Deliverables</h5>
+                <ul class="l">
+                  <li>Configured automated backend jobs, payment gateway integrations, and relational catalog/offer structures</li>
+                  <li>Executed direct SQL queries to audit schema integrity and validate transactional data before and after deployments</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">SQL</span><span class="tag">Backend Jobs</span><span class="tag">Payment Gateways</span><span class="tag">UAT</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc" data-tags="sql qa">
+        <button class="acc-h" aria-expanded="false"><span><b>ERP Systems &amp; Business Process Analyst II</b><em>City of Albuquerque</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Executed SQL-level root-cause analysis and automated regression verification across enterprise PeopleSoft ERP upgrade cycles.</p>
+            <div class="cols">
+              <div>
+                <h5>Key Technical Deliverables</h5>
+                <ul class="l">
+                  <li>Audited compiled PeopleSoft reporting views directly against underlying Oracle/SQL tables to uncover and remediate silent data-filtering bugs</li>
+                  <li>Designed and executed comprehensive regression test suites resulting in zero-downtime production cutovers</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">Oracle SQL</span><span class="tag">PeopleSoft ERP</span><span class="tag">Regression QA</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc" data-tags="qa infra">
+        <button class="acc-h" aria-expanded="false"><span><b>Pre-Production Server &amp; Network Hardware Tester</b><em>Business Solutions Group, Oregon State University</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Validated pre-production Hewlett-Packard server prototypes and high-throughput networking components prior to commercial release.</p>
+            <div class="cols">
+              <div>
+                <h5>Key Technical Deliverables</h5>
+                <ul class="l">
+                  <li>Configured Ixia traffic generators to stress-test NICs, switches, and server throughput under peak load</li>
+                  <li>Authored hardware test plans, captured diagnostic logs, and filed reproducible hardware/firmware defect reports</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">HP Servers</span><span class="tag">Ixia</span><span class="tag">Network Stress Testing</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc" data-tags="infra">
+        <button class="acc-h" aria-expanded="false"><span><b>Adjunct IT Instructor</b><em>California Institute of Applied Technology (CIAT)</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Teach foundational and applied Information Technology courses covering operating systems, networking fundamentals, troubleshooting methodologies, and systems architecture.</p>
+            <div class="tags"><span class="tag">Technical Instruction</span><span class="tag">OS &amp; Networking</span><span class="tag">Systems Architecture</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc" data-tags="infra">
+        <button class="acc-h" aria-expanded="false"><span><b>Infrastructure &amp; Field Operations (OSU College of Business, ProWorks, Xerox)</b><em>Supervisor &middot; IT Intern &middot; Field Service Technician</em></span><i></i></button>
+        <div class="acc-b">
+          <div class="acc-in">
+            <p>Progressive hands-on systems, telephony, and hardware field engineering roles.</p>
+            <div class="cols">
+              <div>
+                <h5>Delivered</h5>
+                <ul class="l">
+                  <li>Supervised 10+ technicians supporting 5,000+ users and 300+ lab workstations at OSU; built asset controls that cut downtime by 30%</li>
+                  <li>Administered Asterisk PBX VoIP systems, FTP servers, and WordPress deployments at ProWorks</li>
+                  <li>Performed hardware diagnostics, board-level component replacement, and preventative maintenance on networked Xerox systems</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">Tier I/II Lead</span><span class="tag">Asterisk PBX</span><span class="tag">Hardware Diagnostics</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="edu" class="reveal">
+    <div class="wrap">
+      <h2>Education &amp; Technical Credentials</h2>
+      <p class="sub"></p>
+      <div class="grid">
+        <div class="card">
+          <h3>Academic Degrees</h3>
+          <p><b style="color:var(--hd)">M.S., IT Project Management</b><br>Northeastern University</p>
+          <p style="margin-top:.75rem"><b style="color:var(--hd)">B.S., Business Information Systems</b><br>Oregon State University &middot; Dean&rsquo;s Leadership Award</p>
+        </div>
+        <div class="card">
+          <h3>Certifications &amp; Specialized Training</h3>
+          <ul class="l">
+            <li>CompTIA Tech+ &amp; IT Fundamentals</li>
+            <li>W3Schools Advanced SQL Certification</li>
+            <li>Applied Machine Learning &amp; Python Modeling</li>
+            <li>Scrum for Ops &amp; DevOps Fundamentals / Kanban Essentials</li>
+            <li>Unity Essentials</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Jaina McGregor &middot; Systems Engineering, Infrastructure &amp; Automation</p>
+    <p style="margin-top:.5rem"><a href="mailto:JainaMcGregor@gmail.com">Email</a></p>
+  </div>
+</footer>
+
 <script>
 (function(){
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 $$('.acc-h').forEach(b=>b.addEventListener('click',()=>{const a=b.parentElement,o=a.classList.toggle('open');b.setAttribute('aria-expanded',o)}));
-$$('.tabset').forEach(ts=>{const bs=$$('.tabs button',ts),ps=$$('.panel',ts);bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.classList.toggle('on',x===b));ps.forEach(p=>p.classList.toggle('on',p.dataset.p===b.dataset.t))}))});
 function count(el){const n=+el.dataset.n,s=el.dataset.s||'',t0=performance.now();(function f(t){const p=Math.min((t-t0)/1100,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)})(t0)}
-window.countUp=count;
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');$$('[data-n]',e.target).forEach(count);io.unobserve(e.target)}}),{threshold:.08});
 $$('.reveal,.hero').forEach(x=>io.observe(x));
 const links=$$('header nav a'),so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
@@ -119,16 +517,22 @@ window.$=$;window.$$=$$;
 })();
 
 (function(){
-const L=[["INFO","02:00:00Z","SYS_CRON: Initiating container image updates via Watchtower..."],["OK","02:05:12Z","SUCCESS: Nextcloud pulled latest stable. Restarting stack..."],["ALERT","14:30:00Z","SYS_ALERT: High memory usage detected on Ollama local LLM node (92%)."],["OK","14:30:05Z","AUTO_RESOLVE: n8n workflow triggered resource reallocation. Normalized to 45%."]];
+const L=[
+  ["INFO","02:00:00Z","SYS_CRON: Initiating container healthcheck & image audit via Watchtower..."],
+  ["OK","02:05:12Z","SUCCESS: Nextcloud & n8n containers verified healthy. Zero dropped packets on WireGuard mesh."],
+  ["ALERT","14:30:00Z","SYS_ALERT: Memory threshold warning on Ollama local LLM worker node (92%)."],
+  ["OK","14:30:05Z","AUTO_RESOLVE: n8n webhook triggered context unload & worker recycle. Node normalized to 44%."]
+];
 const tl=$('#tl'),cl={INFO:'i',OK:'o',ALERT:'w'};let lv='all';
-function draw(){tl.innerHTML='<span class="c">// Recent automated operations log (mock)</span><br>'+L.filter(l=>lv=='all'||l[0]==lv||(lv=='OK'&&l[0]=='INFO')).map(l=>'<span class="i">['+l[1]+']</span> <span class="'+cl[l[0]]+'">'+l[2]+'</span><br>').join('')}
+function draw(){tl.innerHTML='<span class="c">// Automated infrastructure & webhook telemetry log (simulated)</span><br>'+L.filter(l=>lv=='all'||l[0]==lv||(lv=='OK'&&l[0]=='INFO')).map(l=>'<span class="i">['+l[1]+']</span> <span class="'+cl[l[0]]+'">'+l[2]+'</span><br>').join('')}
 $('#lvl').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;$$('#lvl button').forEach(x=>x.classList.toggle('on',x===b));lv=b.dataset.l;draw()});draw();
 const B=[[9990,9999,v=>(v/100).toFixed(2)+'%'],[11000,17000,v=>(v/1000).toFixed(1)+'k'],[600,1000,v=>v],[8,20,v=>(v/10).toFixed(1)+'s']];
 function fmt(i,v){return B[i][2](v)}
-$$('#kpis b').forEach((el,i)=>{el.removeAttribute('data-n')});
 function animate(i,to){const el=$('#k'+i),t0=performance.now();(function f(t){const p=Math.min((t-t0)/900,1);el.textContent=fmt(i,Math.round(to*p));if(p<1)requestAnimationFrame(f)})(t0)}
 const T=[9998,14200,842,12];
 const kio=new IntersectionObserver(es=>{if(es[0].isIntersecting){T.forEach((v,i)=>animate(i,v));kio.disconnect()}},{threshold:.3});kio.observe($('#kpis'));
 $('#sim').onclick=()=>{const v=B.map(b=>Math.round(b[0]+Math.random()*(b[1]-b[0])));v.forEach((x,i)=>animate(i,x));const ok=v[0]>9990&&v[3]<16;const s=$('#stat');s.className='pill '+(ok?'ok':'wn');s.textContent=ok?'STATUS: HEALTHY':'STATUS: DEGRADED'};
 })();
-</script></body></html>
+</script>
+</body>
+</html>
